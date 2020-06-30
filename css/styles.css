@@ -1,11 +1,13 @@
 :root {
   --primary-text-color: #757575;
-  --title-text-color: #212121;
+  --secondary-text-color: #212121;
   --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
 }
 body {
+  font-family: roboto;
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
 }
 
 .list {
@@ -19,13 +21,18 @@ body {
 /* Должности rgba(255, 255, 255, 0.6) */
 
 /* Site nav */
-
 .logo {
+  font-family: raleway;
   color: #000000;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--accent-color);
 }
 
 .site-nav .link {
-  color: var(--title-text-color);
+  color: var(--secondary-text-color);
 }
 
 .site-nav .link:hover,
@@ -33,20 +40,51 @@ body {
   color: var(--accent-color);
 }
 
-/* Hero */
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 
+.auth-nav .link {
+  color: var(--primary-text-color);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
 .hero-title {
   color: #f8f8f8;
 }
 
 /* Section  */
-
 .section-title {
-  color: var(--title-text-color);
+  color: var(--secondary-text-color);
 }
 
 /* Feature */
-
 .feature-list .title {
-  color: var(--title-text-color);
+  color: var(--secondary-text-color);
+}
+
+/* Exemples */
+.work-list .title {
+  color: var(--secondary-text-color);
+}
+
+/* Team */
+.team-list .title {
+  color: var(--secondary-text-color);
+}
+
+/* Button */
+.button {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }

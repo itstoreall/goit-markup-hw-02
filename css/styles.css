@@ -156,7 +156,6 @@ body {
 
 .address .text {
   font-style: normal;
-  color: var(--primary-text-color);
 }
 
 .address span {
@@ -174,6 +173,12 @@ body {
 
 .logo .footer {
   color: var(--primary-white-color);
+}
+
+.address .link {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 /* portfolio */

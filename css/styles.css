@@ -1,4 +1,6 @@
 :root {
+  --primary-font: "Roboto", sans-serif;
+  --secondery-font: "Raleway", sans-serif;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
@@ -6,7 +8,7 @@
   --secondary-white-color: #f5f4fa;
 }
 body {
-  font-family: Roboto, sans-serif;
+  font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -32,7 +34,7 @@ body {
 
 /* Logo */
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondery-font);
   color: var(--accent-color);
   font-weight: bold;
   font-size: 26px;
@@ -50,6 +52,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
@@ -66,6 +69,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -179,6 +183,11 @@ body {
   font-style: normal;
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
 }
 
 /* portfolio */
